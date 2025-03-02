@@ -1,0 +1,279 @@
+.sobre-nos-bg {
+  background-color: #f39f95;
+  box-shadow: inset 0 80px white, inset 0 -256px white;
+}
+
+.sobre-nos {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 44px;
+  padding-top: 20px;
+}
+
+.tratamentos {
+  background: url("/img/decor/bottom-right.svg") no-repeat bottom 20px right
+    20px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px 32px;
+  gap: 0px 44px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.15);
+  place-content: start;
+  max-width: 560px;
+}
+.tratamentos h1 {
+  grid-column: 1/-1;
+  margin-bottom: 28px;
+  color: salmon;
+}
+
+.lista-generica {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.lista-generica li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sobre-nos-img {
+  border-radius: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url("/img/fotos/foto-tratamento.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.background:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* .diferencial */
+.diferencial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 52px;
+}
+
+.double-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.double-img .background {
+  background-image: url("/img/fotos/facial.jpg");
+}
+
+.double-img .background-2 {
+  background-image: url("/img/fotos/corporal.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.background-2:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.diferencial h2 {
+  margin-bottom: 16px;
+  color: white;
+}
+.diferencial-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.diferencial ul li {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+  align-items: start;
+}
+
+.diferencial ul img {
+  width: 32px;
+}
+
+/* Numeros */
+.numeros {
+  margin-bottom: 12px;
+}
+.numeros ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f39f95;
+  border-radius: 16px;
+  padding: 20px;
+}
+.numeros ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numeros h3 {
+  font-size: 2rem;
+}
+.numeros p {
+  text-align: center;
+}
+
+.numeros img {
+  width: 48px;
+}
+
+/* rsppnsividade */
+
+@media (max-width: 1165px) {
+  .sobre-nos-bg {
+    box-shadow: inset 0 80px white, inset 0 -280px white;
+  }
+}
+
+@media (max-width: 832px) {
+  .sobre-nos-bg {
+    box-shadow: inset 0 80px white, inset 0 -310px white;
+  }
+  .numeros h3 {
+    font-size: 1.5rem;
+  }
+  .numeros p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sobre-nos-bg {
+    box-shadow: inset 0 80px white, inset 0 -668px white;
+  }
+
+  .sobre-nos {
+    flex-direction: column;
+  }
+  .tratamentos {
+    max-width: 100%;
+  }
+  .sobre-nos-img {
+    border-radius: 16px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .diferencial {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 52px;
+  }
+  .diferencial .double-img {
+    order: 2;
+  }
+
+  .diferencial .sobre-nos-img {
+    height: 400px;
+  }
+
+  .numeros img {
+    width: 36px;
+  }
+}
+
+@media (max-width: 720px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -700px white;
+    margin-bottom: 32px;
+  }
+  .numeros p {
+    max-width: 15ch;
+  }
+}
+
+@media (max-width: 580px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -700px white;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .numeros ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+    padding: 16px;
+  }
+  .numeros p {
+    max-width: 20ch;
+  }
+}
+
+@media (max-width: 540px) {
+  .sobre-nos {
+    gap: 12px;
+  }
+  .double-img {
+    gap: 12px;
+  }
+
+  .tratamentos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tratamentos p {
+    margin-bottom: 24px;
+  }
+  .lista-generica {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 415px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -720px white;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 407px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -750px white;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 339px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -770px white;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 323px) {
+  .diferencial {
+    background-color: #f39f95;
+    box-shadow: inset 0 20px #f39f95, inset 0 -800px white;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+}
