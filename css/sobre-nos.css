@@ -66,6 +66,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 52px;
+  padding-top: 20px;
 }
 
 .double-img {
@@ -93,7 +94,7 @@
 
 .diferencial h2 {
   margin-bottom: 16px;
-  color: white;
+  color: salmon;
 }
 .diferencial-conteudo > p {
   margin-bottom: 32px;
@@ -195,10 +196,10 @@
 
 @media (max-width: 720px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -700px white;
+    background-color: #fff;
     margin-bottom: 32px;
   }
+
   .numeros p {
     max-width: 15ch;
   }
@@ -206,8 +207,6 @@
 
 @media (max-width: 580px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -700px white;
     gap: 20px;
     margin-bottom: 24px;
   }
@@ -246,8 +245,6 @@
 
 @media (max-width: 415px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -720px white;
     gap: 20px;
     margin-bottom: 28px;
   }
@@ -255,24 +252,18 @@
 
 @media (max-width: 407px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -750px white;
     gap: 20px;
     margin-bottom: 28px;
   }
 }
 @media (max-width: 339px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -770px white;
     gap: 20px;
     margin-bottom: 28px;
   }
 }
 @media (max-width: 323px) {
   .diferencial {
-    background-color: #f39f95;
-    box-shadow: inset 0 20px #f39f95, inset 0 -800px white;
     gap: 20px;
     margin-bottom: 28px;
   }

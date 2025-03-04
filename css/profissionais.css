@@ -1,9 +1,11 @@
 .profissionais-container {
-  padding-top: 20px;
+  padding-top: 32px;
+  margin-bottom: 32px;
 }
 
 #profissionais h1 {
   margin-bottom: 20px;
+  color: salmon;
 }
 #profissionais > p {
   margin-bottom: 32px;

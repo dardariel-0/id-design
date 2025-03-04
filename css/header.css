@@ -62,20 +62,26 @@
 }
 
 .slide-menu {
-  width: 300px;
-  padding: 28px 20px;
+  width: 0px;
+  padding: 28px 24px;
   height: 100%;
   position: fixed;
   top: 0;
-  right: 0;
   background: url("/img/decor/bottom-right.svg") no-repeat bottom 80px right
     20px;
   background-color: white;
-  transition: 0.2s ease;
-  transform: translateX(1000px);
+  transition: 0.5s ease;
   z-index: 4;
   overflow-y: auto;
   scrollbar-width: none;
+  touch-action: none;
+  right: -70px;
+}
+
+.slide-menu.ativo {
+  width: 260px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  right: 0px;
 }
 
 .slide-menu h2 {
@@ -97,8 +103,8 @@
 .slide-menu ul {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-bottom: 40px;
+  gap: 52px;
+  margin-bottom: 64px;
 }
 
 .slide-menu ul li {
@@ -110,15 +116,20 @@
   color: salmon;
 }
 
-.slide-menu .button-1 {
-  display: none;
-  width: 260px;
-  text-align: center;
+.slide-menu ul li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 82%;
+  height: 1px;
+  margin-top: 24px;
+  background-color: #ffd4cf;
 }
 
-#header input:checked ~ .slide-menu {
-  transform: translateX(0px);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+.slide-menu .button-1 {
+  display: none;
+  text-align: center;
+  width: 220px;
 }
 
 @media (max-width: 770px) {

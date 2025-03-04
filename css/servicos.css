@@ -1,5 +1,5 @@
 .servicos {
-  padding-top: 20px;
+  padding-top: 32px;
 }
 
 .lista-servicos {
@@ -10,6 +10,7 @@
 }
 .servicos h1 {
   margin-bottom: 20px;
+  color: salmon;
 }
 .servicos p {
   margin-bottom: 32px;
