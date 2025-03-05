@@ -94,7 +94,7 @@
 
 .diferencial h2 {
   margin-bottom: 16px;
-  color: salmon;
+  color: white;
 }
 .diferencial-conteudo > p {
   margin-bottom: 32px;
@@ -198,6 +198,10 @@
   .diferencial {
     background-color: #fff;
     margin-bottom: 32px;
+  }
+
+  .diferencial h2 {
+    color: salmon;
   }
 
   .numeros p {
