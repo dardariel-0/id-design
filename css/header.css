@@ -1,0 +1,151 @@
+.header-bg {
+  background-color: white;
+}
+.header {
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-itens {
+  display: flex;
+  gap: 24px;
+}
+.header-menu {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu a {
+  display: inline-block;
+  color: #010101;
+  padding: 8px 8px;
+  border-radius: 4px;
+}
+.header-menu a:hover {
+  color: salmon;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0%;
+  background-color: salmon;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* menu hamburguer */
+.header-menu-toggle {
+  align-self: center;
+  display: none;
+}
+.header-menu-toggle input {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.icon-hamburguer {
+  display: block;
+}
+
+.icon-hamburguer {
+  cursor: pointer;
+}
+
+.slide-menu {
+  width: 0px;
+  padding: 28px 24px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: url("/img/decor/bottom-right.svg") no-repeat bottom 80px right
+    20px;
+  background-color: white;
+  transition: 0.5s ease;
+  z-index: 4;
+  overflow-y: auto;
+  scrollbar-width: none;
+  touch-action: none;
+  right: -70px;
+}
+
+.slide-menu.ativo {
+  width: 260px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  right: 0px;
+}
+
+.slide-menu h2 {
+  font-family: montserrat;
+  color: salmon;
+}
+.menu-top-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.close-menu img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.slide-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  margin-bottom: 64px;
+}
+
+.slide-menu ul li {
+  font-size: 1.3rem;
+  padding: 0 4px 0 4px;
+  max-width: max-content;
+}
+.slide-menu ul li:hover {
+  color: salmon;
+}
+
+.slide-menu ul li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 82%;
+  height: 1px;
+  margin-top: 24px;
+  background-color: #ffd4cf;
+}
+
+.slide-menu .button-1 {
+  display: none;
+  text-align: center;
+  width: 220px;
+}
+
+@media (max-width: 770px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-itens .button-1 {
+    display: none;
+  }
+  .slide-menu .button-1 {
+    display: inline-block;
+  }
+}
