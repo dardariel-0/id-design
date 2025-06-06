@@ -1,32 +1,29 @@
 .intro {
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  z-index: 12;
+  padding-top: 80px;
   margin-bottom: 40px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1; /* atrás do header */
+  padding-top: 80px; /* para o conteúdo não ficar escondido atrás do header */
 }
 .conteudo h1 {
-  font-size: 3rem;
-  font-family: montserrat;
-  max-width: 16ch;
+  max-width: 18ch;
   line-height: 1.2;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 .conteudo h1 span {
-  color: salmon;
+  color: var(--cor-06);
 }
 .conteudo p {
   max-width: 52ch;
-}
-
-.video {
-  place-self: end;
-}
-
-.video video {
-  border-radius: 16px;
-  border: solid 3px salmon;
-  max-width: 500px;
+  margin-bottom: 28px;
 }
 
 @media (max-width: 1000px) {
@@ -34,15 +31,9 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .video {
-    width: 100%;
-  }
-  .video video {
-    border-radius: 20px;
-    min-width: 100%;
-  }
+
   .conteudo h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     max-width: 20ch;
     margin-bottom: 28px;
   }
@@ -61,9 +52,6 @@
 @media (max-width: 550px) {
   .conteudo h1 {
     font-size: 2.5rem;
-  }
-  .video video {
-    width: 100%;
   }
 }
 @media (max-width: 400px) {

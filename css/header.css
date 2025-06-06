@@ -1,8 +1,14 @@
 .header-bg {
-  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor-00);
+  z-index: 1000;
 }
+
 .header {
-  padding: 20px 20px;
+  padding: 8px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -11,35 +17,38 @@
 }
 .menu-itens {
   display: flex;
-  gap: 24px;
+  gap: 40px;
+  align-items: center;
 }
 .header-menu {
   display: flex;
-  gap: 10px;
+  gap: 34px;
   justify-content: space-between;
   align-items: center;
 }
 .header-menu a {
   display: inline-block;
-  color: #010101;
-  padding: 8px 8px;
-  border-radius: 4px;
+  color: var(--cor-c10);
+  padding: 4px 0px;
+  border-radius: 100px;
+  transition: 0.2s;
+  position: relative;
 }
-.header-menu a:hover {
-  color: salmon;
-}
-
 .header-menu a::after {
   content: "";
-  display: block;
-  height: 1px;
-  width: 0%;
-  background-color: salmon;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: var(--degrade);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .header-menu a:hover::after {
-  width: 100%;
-  transition: 0.5s;
+  transform: scaleX(1);
 }
 
 /* menu hamburguer */
@@ -86,7 +95,7 @@
 
 .slide-menu h2 {
   font-family: montserrat;
-  color: salmon;
+  color: var(--cor-06);
 }
 .menu-top-slide {
   display: flex;
@@ -113,7 +122,7 @@
   max-width: max-content;
 }
 .slide-menu ul li:hover {
-  color: salmon;
+  color: var(--cor-06);
 }
 
 .slide-menu ul li::after {

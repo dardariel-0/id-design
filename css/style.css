@@ -2,10 +2,12 @@
 @import "/css/global/animacao.css";
 
 @import "/css/global/slide.css";
+@import "/css/global/colors.css";
+@import "/css/global/typography.css";
 @import "/css/header.css";
 @import "/css/introducao.css";
 @import "/css/sobre-nos.css";
-@import "/css/servicos.css";
+@import "/css/portfolio.css";
 @import "/css/profissionais.css";
 @import "/css/abordagem.css";
 

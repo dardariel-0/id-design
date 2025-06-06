@@ -41,7 +41,7 @@
 
 .prev:hover,
 .next:hover {
-  background-color: salmon;
+  background-color: var(--cor-06);
 }
 
 /* Caption text */
@@ -75,7 +75,7 @@
 
 .active,
 .dot:hover {
-  background-color: salmon;
+  background-color: var(--cor-06);
 }
 
 /* Fading animation */

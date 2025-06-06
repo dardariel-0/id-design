@@ -1,0 +1,49 @@
+/* font 1 */
+.font1 {
+  font: 400 2.5rem/1.35 "poppins", sans-serif;
+}
+
+.font2 {
+  font: 400 2rem/1.35 "poppins", sans-serif;
+}
+
+.span2 {
+  font: 700 2rem/1.35 "poppins", sans-serif;
+  /* background: linear-gradient(to right, #a16c2b, #d8b056, #d8b056, #a16c2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.span1 {
+  font: 700 2.5rem/1.35 "poppins", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #a16c2b, #d8b056, #a16c2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* forma resumida e mais comum de escrever a fonte, seguir exatamente essa ordem: peso - tamanho/line height - fonte */
+
+.font-t2 {
+  font: 500 1rem/1.35 "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.font-texto {
+  font: 400 1.2rem/1.35 "Poppins", sans-serif;
+}
+
+.font-p2 {
+  font: 400 0.875rem/1.2 "Poppins", sans-serif;
+}
+
+.font-g1 {
+  font: 700 1rem/1.2 "Poppins", sans-serif;
+}
+
+@media (max-width: 580px) {
+  .font-t1 {
+    margin-bottom: 10px;
+  }
+}

@@ -73,7 +73,7 @@
   font: 500 1rem/1.5 "poppins", sans-serif;
   margin-bottom: 4px;
   letter-spacing: 1px;
-  color: salmon;
+  color: var(--cor-06);
 }
 .form-01 .coluna-2 {
   grid-column: span 2;

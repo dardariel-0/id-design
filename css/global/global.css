@@ -41,8 +41,12 @@ a {
 }
 
 .button-1 {
-  font-size: 0.875rem;
-  background-color: salmon;
+  font-size: 1rem;
+  background-image: var(--degrade);
+  background-size: 200% auto; /* necessário para o movimento */
+  background-position: 0% center;
+  animation: moveGradient 5s linear infinite;
+
   padding: 10px 20px;
   border-radius: 30px;
   color: white;
@@ -50,17 +54,65 @@ a {
   letter-spacing: 0.6px;
   border: 2px solid white;
   text-align: center;
+  transition: 0.2s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
+
 .button-1:hover {
-  background-color: white;
-  border: 2px solid salmon;
-  color: salmon;
-  transition: 0.3s;
+  animation-play-state: paused;
+  /* transform: translate(-1px, -1px); */
+}
+
+.button-2 {
+  font-size: 1rem;
+  background-image: var(--degrade);
+  background-size: 200% auto; /* necessário para o movimento */
+  background-position: 0% center;
+  animation: moveGradient 5s linear infinite;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: 2px solid white;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.button-2:hover {
+  animation-play-state: paused;
+  /* transform: translate(-1px, -1px); */
+}
+
+/* Animação do degradê */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .button-seta {
   display: flex;
   align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: 2px solid white;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
 }
 .button-seta::after {
   content: "";

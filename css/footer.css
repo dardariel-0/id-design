@@ -1,5 +1,5 @@
 .footer-bg {
-  background-color: salmon;
+  background-color: var(--cor-06);
   padding-bottom: 20px;
 }
 .footer {
