@@ -1,34 +1,46 @@
 .contato-bg {
-  background-color: #f39f95;
-  box-shadow: inset 0 40px white, inset 0 -40px white;
+  background-image: url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 60px;
 }
 
 .contato {
+  padding-top: 68px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  align-items: center;
-  margin-bottom: 28px;
 }
 
-.dados-totais {
-  background: url("/img/decor/bottom-right-w.svg") no-repeat bottom right;
+.quemsomos {
+  display: grid;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  & p {
+    margin-bottom: 20px;
+  }
 }
 
-.dados-totais h1 {
+.contato h1,
+.contato h2 {
   margin-bottom: 12px;
   font-size: 1.5rem;
-  color: white;
+  background: linear-gradient(to right, #a16c2b, #d8b056, #a16c2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 .dados-totais > p {
   margin-bottom: 20px;
-  max-width: 30ch;
+  max-width: 52ch;
+  font-style: oblique;
 }
 
 .dados-contato h2 {
   font-size: 1rem;
   margin-bottom: 12px;
-  color: white;
+  text-transform: none;
 }
 .dados-contato ul {
   margin-bottom: 20px;
@@ -50,86 +62,22 @@
   margin-top: 2px;
 }
 
-/* FORMULARIO */
-
-.contact-form {
-  padding: 40px;
-  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.15);
-  background-color: white;
-}
-
-.contact-form {
-  border-radius: 16px;
-}
-
-.form-01 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.form-01 label {
-  display: block;
-  font: 500 1rem/1.5 "poppins", sans-serif;
-  margin-bottom: 4px;
-  letter-spacing: 1px;
-  color: var(--cor-06);
-}
-.form-01 .coluna-2 {
-  grid-column: span 2;
-}
-.form-01 input[type="text"],
-.form-01 input[type="email"],
-.form-01 textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
-  background-color: #fcfcfc;
-  border: 1px solid #f1f1f1;
-  padding: 12px;
-  border-radius: 4px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.form-01 input[type="text"]:focus,
-.form-01 input[type="email"]:focus,
-.form-01 textarea:focus {
-  outline: none;
-  border-color: #f39f95;
-  background-color: white;
-  box-shadow: 0 0 0 2px #fccdc7;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 680px) {
   .contato-bg {
-    background-color: #f39f95;
-    box-shadow: inset 0 80px white, inset 0 -80px white;
+    padding-bottom: 44px;
   }
-
-  .contact-form {
-    padding: 28px;
+  .contato {
+    padding-top: 40px;
   }
-  .form-01 {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .form-01 .coluna-2 {
-    grid-column: 1;
+  .dados-totais {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 640px) {
-  .contato-bg {
-    box-shadow: inset 0 0px white, inset 0 -132px white;
-  }
-
   .contato {
     grid-template-columns: 1fr;
     gap: 20px;
     align-items: center;
-  }
-  .dados-totais {
-    padding-top: 32px;
-  }
-  .contact-form {
-    order: 2;
   }
 }

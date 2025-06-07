@@ -69,3 +69,16 @@ document.onclick = function (evento) {
     menuMobile.classList.remove("ativo");
   }
 };
+
+//feedback
+
+const track = document.getElementById("feedbackTrack");
+
+// Armazena os cards originais antes de duplicar
+const originalCards = Array.from(track.children);
+
+// Duplicar apenas uma vez para criar o efeito de loop
+originalCards.forEach((card) => {
+  const clone = card.cloneNode(true);
+  track.appendChild(clone);
+});

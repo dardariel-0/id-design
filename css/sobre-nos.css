@@ -34,6 +34,7 @@
   text-align: center;
   color: var(--cor-03);
   font-size: 1.6rem;
+  max-width: 36ch;
 
   & span {
     color: var(--cor-00);
