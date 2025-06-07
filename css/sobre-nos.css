@@ -113,6 +113,13 @@
   }
 }
 
+@media (max-width: 680px) {
+  .diferencial {
+    padding-top: 52px;
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 700px) {
   .list1 {
     grid-template-columns: 1fr;

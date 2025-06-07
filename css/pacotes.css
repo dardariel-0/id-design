@@ -52,6 +52,23 @@
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   height: max-content;
+  background-image: url("/img/bg-item.jpg");
+
+  & .info-portfolio.bronze {
+    background-image: var(--bronze);
+  }
+
+  & .button-1.bronze {
+    background-image: var(--bronze);
+  }
+
+  & .info-portfolio.prata {
+    background-image: var(--prata);
+  }
+
+  & .button-1.prata {
+    background-image: var(--prata);
+  }
 
   & .button-1 {
     width: auto;
@@ -131,33 +148,43 @@
   right: 0;
 }
 
+span.bronze::after {
+  background-image: var(--bronze);
+}
+
+span.prata::after {
+  background-image: var(--prata);
+}
+
 @media (max-width: 900px) {
   .pacotes {
     gap: 20px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .pacote-info {
     padding: 0px 16px 16px 16px;
   }
+
+  .descricao {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   #pacotes.container {
-    padding: 0px;
-  }
-
-  #pacotes h1,
-  #pacotes p {
-    padding: 0px 20px;
+    padding-top: 52px;
+    padding-bottom: 12px;
   }
 
   .pacotes {
     display: flex;
     margin: 0;
     overflow-x: auto;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     scroll-behavior: smooth;
     padding: 0px;
     gap: 8px;
@@ -168,7 +195,6 @@
     gap: 4px;
     justify-items: center;
     margin: 10px 5px;
-    margin-bottom: 32px;
   }
 
   #pacotes > p {

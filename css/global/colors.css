@@ -27,6 +27,10 @@
     #7a501e
   );
 
+  --bronze: linear-gradient(270deg, #a04f2a, #dc7f54, #a04f2a);
+
+  --prata: linear-gradient(270deg, #3a3c40, #93979c, #3a3c40);
+
   --cor-c1: #f7f7f7;
   --cor-c2: #ededed;
   --cor-c3: #dedede;

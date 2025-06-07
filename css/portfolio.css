@@ -85,6 +85,18 @@
   }
 }
 
+@media (max-width: 680px) {
+  .portfolio-bg {
+    padding-bottom: 44px;
+  }
+  .portfolio {
+    padding-top: 52px;
+  }
+  .lista-portfolio {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 640px) {
   .lista-portfolio {
     display: grid;
