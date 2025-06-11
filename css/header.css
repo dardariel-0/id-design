@@ -3,11 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--cor-00);
   z-index: 1000;
   background-image: url("/img/bg-header.jpg");
   background-size: cover;
   background-position: top;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -17,6 +17,10 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-logo {
+  width: 160px;
 }
 .menu-itens {
   display: flex;
@@ -44,7 +48,14 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-image: var(--degrade);
+  background-image: linear-gradient(
+    to right,
+    #a16c2b,
+    #d8b056,
+    #fae1a6,
+    #d8b056,
+    #a16c2b
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -75,11 +86,11 @@
 
 .slide-menu {
   width: 0px;
-  padding: 28px 24px;
+  padding: 16px 24px;
   height: 100vh;
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: var(--cor-00);
   transition: 0.5s ease;
   z-index: 4;
   overflow-y: auto;
@@ -136,7 +147,14 @@
   width: 82%;
   height: 2px;
   margin-top: 20px;
-  background-image: var(--degrade);
+  background-image: linear-gradient(
+    to right,
+    #a16c2b,
+    #d8b056,
+    #fae1a6,
+    #d8b056,
+    #a16c2b
+  );
 }
 
 .slide-menu .button-1 {
@@ -145,7 +163,7 @@
   width: 220px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .header-menu {
     display: none;
   }

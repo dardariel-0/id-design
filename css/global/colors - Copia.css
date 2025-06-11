@@ -2,26 +2,32 @@
   /* cores pardao */
   --cor-00: #fff;
   --cor-01: #f7f8fd;
-  --cor-02: #eef1fc;
-  --cor-03: #dde3f8;
-  --cor-04: #b3c0ef;
-  --cor-05: #9faee4; /*cor principal */
-  --cor-06: #7b8ac2;
+  --cor-02: #fff4cf;
+  --cor-03: #faeab5;
+  --cor-04: #ebdb9a;
+  --cor-05: #d8b056; /*cor principal */
+  --cor-06: #d8b056;
   --cor-07: #8e9ac7;
-  --cor-08: #56659b;
-  --cor-09: #3c4870;
-  --cor-09: #2c365a;
+  --cor-08: #a16c2b;
+  --cor-09: #16296d;
   --cor-10: #141414;
 
   /* --degrade: linear-gradient(to right, #a16c2b, #d8b056, #ebdb9a, #d8b056); */
 
-  --degrade: linear-gradient(270deg, #56659b, #7b8ac2, #7b8ac2, #56659b);
+  --degrade: linear-gradient(270deg, #8b5c23, #d1aa4f, #dfb85e, #8b5c23);
 
   --degrade2: linear-gradient(to right, #fff, #fff);
 
-  --degrade3: linear-gradient(-270deg, #56659b, #9faee4);
+  --degrade3: linear-gradient(
+    270deg,
+    #7a501e,
+    #a4702a,
+    #cda049,
+    #a4702a,
+    #7a501e
+  );
 
-  --ouro: linear-gradient(270deg, #a16c2b, #d8b056, #a16c2b);
+  --bronze: linear-gradient(270deg, #a04f2a, #dc7f54, #a04f2a);
 
   --prata: linear-gradient(270deg, #3a3c40, #93979c, #3a3c40);
 

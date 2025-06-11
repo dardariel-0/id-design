@@ -63,7 +63,8 @@ a {
 
 .button-1:hover {
   animation-play-state: paused;
-  /* transform: translate(-1px, -1px); */
+  transform: scale(1.01);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 .button-2 {
@@ -87,7 +88,8 @@ a {
 
 .button-2:hover {
   animation-play-state: paused;
-  /* transform: translate(-1px, -1px); */
+  transform: scale(1.01);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Animação do degradê */

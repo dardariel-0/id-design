@@ -1,22 +1,5 @@
-<svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M33.9131 10H6.08696C4.94609 10 4 9.09326 4 7.99995C4 6.90663 4.94609 6 6.08696 6H33.9131C35.054 6 36 6.90663 36 7.99995C36 9.09326 35.054 10 33.9131 10Z" fill="url(#paint0_linear_229_2)"/>
-<path d="M33.9229 22.0103H6.09673C4.95585 22.0103 4.00977 21.1035 4.00977 20.0102C4.00977 18.9169 4.95585 18.0103 6.09673 18.0103H33.9229C35.0637 18.0103 36.0098 18.9169 36.0098 20.0102C36.0098 21.1035 35.0637 22.0103 33.9229 22.0103Z" fill="url(#paint1_linear_229_2)"/>
-<path d="M33.9131 34H6.08696C4.94609 34 4 33.0933 4 31.9999C4 30.9066 4.94609 30 6.08696 30H33.9131C35.054 30 36 30.9066 36 31.9999C36 33.0933 35.054 34 33.9131 34Z" fill="url(#paint2_linear_229_2)"/>
-<defs>
-<linearGradient id="paint0_linear_229_2" x1="4" y1="8" x2="36" y2="8" gradientUnits="userSpaceOnUse">
-<stop stop-color="#8B5C23"/>
-<stop offset="0.5" stop-color="#D1AA4F"/>
-<stop offset="1" stop-color="#8B5C23"/>
-</linearGradient>
-<linearGradient id="paint1_linear_229_2" x1="4.00977" y1="20.0103" x2="36.0098" y2="20.0103" gradientUnits="userSpaceOnUse">
-<stop stop-color="#8B5C23"/>
-<stop offset="0.5" stop-color="#D1AA4F"/>
-<stop offset="1" stop-color="#8B5C23"/>
-</linearGradient>
-<linearGradient id="paint2_linear_229_2" x1="4" y1="32" x2="36" y2="32" gradientUnits="userSpaceOnUse">
-<stop stop-color="#8B5C23"/>
-<stop offset="0.5" stop-color="#D1AA4F"/>
-<stop offset="1" stop-color="#8B5C23"/>
-</linearGradient>
-</defs>
+<svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.9131 10.5H6.08696C4.94609 10.5 4 9.59326 4 8.49995C4 7.40663 4.94609 6.5 6.08696 6.5H33.9131C35.054 6.5 36 7.40663 36 8.49995C36 9.59326 35.054 10.5 33.9131 10.5Z" fill="#7B8AC2"/>
+<path d="M33.9229 22.5103H6.09673C4.95585 22.5103 4.00977 21.6035 4.00977 20.5102C4.00977 19.4169 4.95585 18.5103 6.09673 18.5103H33.9229C35.0637 18.5103 36.0098 19.4169 36.0098 20.5102C36.0098 21.6035 35.0637 22.5103 33.9229 22.5103Z" fill="#7B8AC2"/>
+<path d="M33.9131 34.5H6.08696C4.94609 34.5 4 33.5933 4 32.4999C4 31.4066 4.94609 30.5 6.08696 30.5H33.9131C35.054 30.5 36 31.4066 36 32.4999C36 33.5933 35.054 34.5 33.9131 34.5Z" fill="#7B8AC2"/>
 </svg>

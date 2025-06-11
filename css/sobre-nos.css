@@ -1,6 +1,5 @@
 .sobre-nos-bg {
-  background-image: var(--degrade3);
-  background-size: 200% auto; /* necessário para o movimento */
+  background-image: linear-gradient(-270deg, #2c365a, #56659b, #9faee4);
 }
 
 /* .diferencial */
@@ -32,7 +31,7 @@
 .diferencial h2 {
   margin-bottom: 32px;
   text-align: center;
-  color: var(--cor-03);
+  color: var(--cor-02);
   font-size: 1.6rem;
   max-width: 36ch;
 
@@ -72,7 +71,7 @@
   border-radius: 20px;
   max-width: 376px;
   border: 2px solid #fcfcfc; /* borda interna */
-  outline: 2px solid var(--cor-06); /* borda externa branca */
+  outline: 2px solid var(--cor-04); /* borda externa branca */
   outline-offset: -4px; /* encosta mais na borda */
   padding: 20px;
   background-image: url("/img/bg-item.jpg");
@@ -135,5 +134,11 @@
     & .sumirMobile {
       display: none;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .diferencial h2 {
+    font-size: 1.3rem;
   }
 }

@@ -54,12 +54,12 @@
   height: max-content;
   background-image: url("/img/bg-item.jpg");
 
-  & .info-portfolio.bronze {
-    background-image: var(--bronze);
+  & .info-portfolio.ouro {
+    background-image: var(--ouro);
   }
 
-  & .button-1.bronze {
-    background-image: var(--bronze);
+  & .button-1.ouro {
+    background-image: var(--ouro);
   }
 
   & .info-portfolio.prata {
@@ -148,8 +148,8 @@
   right: 0;
 }
 
-span.bronze::after {
-  background-image: var(--bronze);
+span.ouro::after {
+  background-image: var(--ouro);
 }
 
 span.prata::after {

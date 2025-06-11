@@ -14,6 +14,14 @@
   -webkit-text-fill-color: transparent; */
 }
 
+.span0 {
+  font: 700 2.5rem/1.35 "poppins", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #56659b, #7b8ac2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .span1 {
   font: 700 2.5rem/1.35 "poppins", sans-serif;
   text-transform: uppercase;

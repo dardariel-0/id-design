@@ -1,6 +1,5 @@
 .feedback-section {
-  background-image: var(--degrade3);
-  background-size: 200% auto; /* necessário para o movimento */
+  background-image: linear-gradient(-270deg, #2c365a, #56659b, #9faee4);
   padding-top: 68px;
   padding-bottom: 60px;
   display: grid;
@@ -22,7 +21,7 @@
   justify-self: center;
   margin-bottom: 32px;
   text-align: center;
-  color: var(--cor-03);
+  color: var(--cor-02);
   font-size: 1.6rem;
   max-width: 24ch;
 
@@ -73,5 +72,11 @@
   }
   .feedback-track {
     animation: scroll-horizontal 40s linear infinite;
+  }
+}
+
+@media (max-width: 500px) {
+  .feedback-section h2 {
+    font-size: 1.3rem;
   }
 }

@@ -82,3 +82,16 @@ originalCards.forEach((card) => {
   const clone = card.cloneNode(true);
   track.appendChild(clone);
 });
+
+//links
+
+const btns = document.querySelectorAll(".jsLink");
+
+function prevent(evento) {
+  evento.preventDefault(); // Prevents default button behavior
+  window.open(this.href, "_blank");
+}
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", prevent);
+});
