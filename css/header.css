@@ -157,7 +157,7 @@
   );
 }
 
-.slide-menu .button-1 {
+.slide-menu .btn-mobile {
   display: none;
   text-align: center;
   width: 220px;
@@ -172,11 +172,11 @@
   }
 }
 
-@media (max-width: 400px) {
-  .menu-itens .button-1 {
+@media (max-width: 440px) {
+  .menu-itens .btn-desktop {
     display: none;
   }
-  .slide-menu .button-1 {
+  .slide-menu .btn-mobile {
     display: inline-block;
   }
 }
