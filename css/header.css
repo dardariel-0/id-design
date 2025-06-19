@@ -11,7 +11,7 @@
 }
 
 .header {
-  padding: 8px 20px;
+  padding: 12px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -20,7 +20,7 @@
 }
 
 .header-logo {
-  width: 160px;
+  width: 140px;
 }
 .menu-itens {
   display: flex;
