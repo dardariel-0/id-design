@@ -77,8 +77,11 @@
               <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
-          <a class="button-1 jsLink btn-desktop"
-            href="https://api.whatsapp.com/send?1=pt_BR&phone=5583981016326" fbq('track', 'Header1')
+          <a
+            class="button-1 jsLink btn-desktop"
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=5583981016326"
+            onclick="fbq('track', 'headerDesktop');"
+            target="_blank"
             >WhatsApp</a
           >
           <div class="header-menu-toggle">
@@ -104,7 +107,9 @@
               </ul>
               <a
                 class="button-1 btn-mobile jsLink"
-                href="https://api.whatsapp.com/send?1=pt_BR&phone=5583981016326" fbq('track', 'HeaderMobile')
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=5583981016326"
+                onclick="fbq('track', 'headerMobile');"
+                target="_blank"
                 >Whatsapp</a
               >
             </div>
@@ -513,6 +518,8 @@
           <a
             class="button-1 jsLink"
             href="https://api.whatsapp.com/send?1=pt_BR&phone=5583981016326"
+            onclick="fbq('track', 'sectionContato');"
+            target="_blank"
             >Fale conosco</a
           >
         </section>
