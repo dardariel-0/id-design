@@ -172,7 +172,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 520px) {
   .menu-itens .btn-desktop {
     display: none;
   }

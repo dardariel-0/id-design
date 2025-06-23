@@ -92,6 +92,12 @@ a {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+.btnwpp {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
 /* Animação do degradê */
 @keyframes moveGradient {
   0% {
